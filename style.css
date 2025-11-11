@@ -9,7 +9,16 @@
 
 body {
     font-family: 'Noto Sans Arabic', sans-serif;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    
+    /* === باکگراوندە نوێیەکە (قەڵای شێروانە) === */
+    /* دانانی وێنەی قەڵا + تاریککردنی وێنەکە */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                      url('https://upload.wikimedia.org/wikipedia/commons/8/8d/Sherwana_Castle_Kalar.jpg');
+    background-size: cover; /* وێنەکە هەموو شاشەکە دادەپۆشێت */
+    background-position: center; /* ناوەڕاستی وێنەکە نیشان دەدات */
+    background-attachment: fixed; /* وێنەکە ناجوڵێت لەکاتی سکڕۆڵ */
+    /* === === */
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,27 +31,26 @@ body {
 }
 
 .login-form {
-    /* === گرنگترین بەش === */
-    /* دانانی وێنەی باکگراوند + تاریککردنی وێنەکە بۆ خوێندنەوە */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
-                      url('https:// logo.jpg');
-    background-size: cover; /* وێنەکە هەموو بۆکسەکە دادەپۆشێت */
-    background-position: center; /* ناوەڕاستی وێنەکە نیشان دەدات */
+    /* === دیزاینە نوێیەکە (شوشەی لێڵ) === */
+    background: rgba(255, 255, 255, 0.1); /* ڕەنگی سپی زۆر شەفاف */
+    backdrop-filter: blur(10px); /* وێنەکەی پشتەوەی لێڵ دەکات */
+    -webkit-backdrop-filter: blur(10px); /* بۆ براوزەری Safari */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* سنوورێکی کاڵ */
     /* === === */
 
     padding: 2.5rem; 
     border-radius: 10px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* سێبەرێکی تۆختر */
     width: 100%;
     max-width: 400px;
     text-align: center;
 }
 
-/* === ستایلی نووسینە گەورەکە === */
+/* === نووسینەکان دەبێت سپی بن === */
 .login-form h2 {
     margin: 0;
     margin-bottom: 2rem; 
-    font-size: 2.2rem; /* قەبارەی گەورە */
+    font-size: 2.2rem;
     color: #ffffff; /* ڕەنگی سپی */
     font-weight: 700;
 }
@@ -62,17 +70,17 @@ body {
 .input-group input {
     width: 100%;
     padding: 0.75rem;
-    border: 1px solid #ccc;
+    border: 1px solid rgba(255, 255, 255, 0.4); /* سنووری کاڵ */
     border-radius: 5px;
     font-size: 1rem;
     font-family: 'Noto Sans Arabic', sans-serif;
     
-    /* === گۆڕانکاری بۆ بۆکسەکان === */
-    background: rgba(255, 255, 255, 0.15); /* باکگراوندی شەفاف */
+    /* بۆکسەکانیش شەفاف دەبن */
+    background: rgba(255, 255, 255, 0.15); 
     color: #ffffff; /* نووسینی ناو بۆکسەکە سپی دەبێت */
 }
 
-/* دوگمەکە وەک خۆی جوانە */
+/* دوگمەکە */
 .login-button {
     width: 100%;
     padding: 0.75rem;
@@ -90,6 +98,7 @@ body {
     background-color: #5a6dcb;
 }
 
+/* لینکەکان */
 .links {
     margin-top: 1.5rem;
     display: flex;
@@ -100,7 +109,7 @@ body {
     color: #ffffff; /* لینکەکانیش سپی دەبن */
     text-decoration: none;
     font-size: 0.9rem;
-    font-weight: 700; /* با قەڵەو بن تا باشتر دیاربن */
+    font-weight: 700;
 }
 
 .links a:hover {

@@ -10,15 +10,13 @@
 body {
     font-family: 'Noto Sans Arabic', sans-serif;
     
-    /* === باکگراوندە نوێیەکە (قەڵای شێروانە) === */
-    /* دانانی وێنەی قەڵا + تاریککردنی وێنەکە */
+    /* === باکگراوندی قەڵای شێروانە === */
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
                       url('https://upload.wikimedia.org/wikipedia/commons/8/8d/Sherwana_Castle_Kalar.jpg');
-    background-size: cover; /* وێنەکە هەموو شاشەکە دادەپۆشێت */
-    background-position: center; /* ناوەڕاستی وێنەکە نیشان دەدات */
-    background-attachment: fixed; /* وێنەکە ناجوڵێت لەکاتی سکڕۆڵ */
-    /* === === */
-
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* وێنەکە ناجوڵێت */
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,27 +29,36 @@ body {
 }
 
 .login-form {
-    /* === دیزاینە نوێیەکە (شوشەی لێڵ) === */
-    background: rgba(255, 255, 255, 0.1); /* ڕەنگی سپی زۆر شەفاف */
-    backdrop-filter: blur(10px); /* وێنەکەی پشتەوەی لێڵ دەکات */
-    -webkit-backdrop-filter: blur(10px); /* بۆ براوزەری Safari */
-    border: 1px solid rgba(255, 255, 255, 0.2); /* سنوورێکی کاڵ */
-    /* === === */
-
+    /* === دیزاینی شوشەی لێڵ (Frosted Glass) === */
+    background: rgba(255, 255, 255, 0.1); 
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2); 
+    
     padding: 2.5rem; 
     border-radius: 10px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* سێبەرێکی تۆختر */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     width: 100%;
     max-width: 400px;
     text-align: center;
 }
 
-/* === نووسینەکان دەبێت سپی بن === */
+/* === ستایلی لۆگۆ نوێیەکە === */
+.login-logo {
+    width: 90px; /* قەبارەی لۆگۆکە */
+    height: auto; /* با باڵای خۆی وەربگرێت */
+    margin-bottom: 1rem; /* بۆشایی ژێر لۆگۆکە */
+    border-radius: 50%; /* بازنەیی دەکات (ئەگەر لۆگۆکە چوارگۆشە بێت) */
+    background: rgba(255, 255, 255, 0.1); /* باکگراوندێکی کاڵ */
+    padding: 5px; /* کەمێک بۆشایی ناوەوە */
+}
+
+/* === نووسینەکان بە سپی === */
 .login-form h2 {
     margin: 0;
     margin-bottom: 2rem; 
     font-size: 2.2rem;
-    color: #ffffff; /* ڕەنگی سپی */
+    color: #ffffff;
     font-weight: 700;
 }
 
@@ -63,21 +70,19 @@ body {
 .input-group label {
     display: block;
     margin-bottom: 0.5rem;
-    color: #eeeeee; /* ڕەنگی سپی (کەمێک کاڵتر) */
+    color: #eeeeee;
     font-weight: 700;
 }
 
 .input-group input {
     width: 100%;
     padding: 0.75rem;
-    border: 1px solid rgba(255, 255, 255, 0.4); /* سنووری کاڵ */
+    border: 1px solid rgba(255, 255, 255, 0.4);
     border-radius: 5px;
     font-size: 1rem;
     font-family: 'Noto Sans Arabic', sans-serif;
-    
-    /* بۆکسەکانیش شەفاف دەبن */
     background: rgba(255, 255, 255, 0.15); 
-    color: #ffffff; /* نووسینی ناو بۆکسەکە سپی دەبێت */
+    color: #ffffff;
 }
 
 /* دوگمەکە */
@@ -106,7 +111,7 @@ body {
 }
 
 .links a {
-    color: #ffffff; /* لینکەکانیش سپی دەبن */
+    color: #ffffff;
     text-decoration: none;
     font-size: 0.9rem;
     font-weight: 700;

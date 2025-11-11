@@ -25,7 +25,7 @@ body {
     /* === گرنگترین بەش === */
     /* دانانی وێنەی باکگراوند + تاریککردنی وێنەکە بۆ خوێندنەوە */
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
-                      url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=1470');
+                      url('https://'logo.jpg);
     background-size: cover; /* وێنەکە هەموو بۆکسەکە دادەپۆشێت */
     background-position: center; /* ناوەڕاستی وێنەکە نیشان دەدات */
     /* === === */

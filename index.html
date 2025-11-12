@@ -14,18 +14,19 @@
 }
 
 body {
-    /* بەپێی کۆدی ڕەسەنی تۆ، ڕەنگی شین (یان وێنە) بوو */
-    background-color: #1976D2; 
+    /* گۆڕینی باکگراوند بۆ سووری تۆخ (وەک خوێن) */
+    background-color: #8B0000; 
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    font-family: 'Noto Sans Arabic', sans-serif; /* بەپێی ئەو فۆنتەی کە بەکار هاتبوو */
-    direction: rtl; /* بۆ زمانی کوردی/عەرەبی */
+    font-family: Arial, sans-serif;
+    direction: rtl; 
 }
 
 .login-container {
-    background-color: #ffffff;
+    /* ڕەنگی بۆکسەکە (سپی نیمچە ڕوون) */
+    background-color: rgba(255, 255, 255, 0.9);
     padding: 40px;
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
@@ -43,7 +44,8 @@ body {
 }
 
 h2 {
-    color: #333333;
+    /* ڕەنگی نووسینەکە (سووری تۆخ) */
+    color: #8B0000; 
     margin-bottom: 30px;
     font-size: 24px;
     font-weight: 600;
@@ -51,13 +53,14 @@ h2 {
 
 .input-group {
     margin-bottom: 20px;
-    text-align: right; /* بۆ ئاراستەی ڕاست بۆ چەپ */
+    text-align: right; 
 }
 
 .input-group label {
+    /* ڕەنگی نووسینەکە (تۆخ) */
+    color: #8B0000; 
     display: block;
     margin-bottom: 8px;
-    color: #555555;
     font-size: 14px;
 }
 
@@ -72,14 +75,15 @@ h2 {
 }
 
 .input-group input:focus {
-    border-color: #1976D2;
+    border-color: #8B0000;
     outline: none;
 }
 
 .login-button {
+    /* ڕەنگی دوگمە (سووری تۆخ) */
     width: 100%;
     padding: 12px;
-    background-color: #667eaa; /* ڕەنگی دوگمە بەپێی وێنەی CSSـی تۆ */
+    background-color: #B22222; 
     color: #ffffff;
     border: none;
     border-radius: 6px;
@@ -89,7 +93,7 @@ h2 {
 }
 
 .login-button:hover {
-    background-color: #5a6dcb;
+    background-color: #8B0000;
 }
 
 .links {
@@ -99,7 +103,8 @@ h2 {
 }
 
 .links a {
-    color: #1976D2;
+    /* ڕەنگی لینکەکان (سووری تۆخ) */
+    color: #8B0000;
     text-decoration: none;
     font-size: 14px;
     transition: color 0.3s;
@@ -114,13 +119,13 @@ h2 {
 </head>
 <body>
     <div class="login-container">
-        <img src="/logo.jpg" alt="Logo Zankoy Garmian" class="login-logo">
+        <img src="logo.jpg" alt="Logo Zankoy Garmian" class="login-logo">
         
         <h2>زانکۆی گەرمیان</h2>
         
-        <form action="http://192.168.8.160" method="POST"> 
+        <form action="#" method="POST"> 
             <div class="input-group">
-                <label for="username">ژمارەی تەلەفۆن</label>
+                <label for="username">ژمارەی مۆبایل</label>
                 <input type="text" id="username" name="username" required>
             </div>
             <div class="input-group">
@@ -131,8 +136,8 @@ h2 {
             <button type="submit" class="login-button">بچۆ ژوورەوە</button>
             
             <div class="links">
-                <a href="https://universy-web-khanaqin.netlify.app">وشەی نهێنیت بیرکردووەتەوە؟</a>
-                <a href="https://universy-web-khanaqin.netlify.app">هەژمارێکی نوێ دروست بکە</a>
+                <a href="#">وشەی نهێنیت بیرکردووەتەوە؟</a>
+                <a href="#">هەژمارێکی نوێ دروست بکە</a>
             </div>
         </form>
     </div>

